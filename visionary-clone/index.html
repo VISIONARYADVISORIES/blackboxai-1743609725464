@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visionary Advisories Clone</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS via CDN (Development) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0A192F',
+            secondary: '#1D3557'
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Load Tailwind plugins separately -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔮</text></svg>">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .hero-bg {
+      background-image: url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-[#0A192F] text-white sticky top-0 z-50 shadow-md">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="text-2xl font-bold">Visionary Advisories</div>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#" class="hover:text-blue-300 transition">Home</a>
+          <a href="#" class="hover:text-blue-300 transition">About</a>
+          <a href="#" class="hover:text-blue-300 transition">Services</a>
+          <a href="#" class="hover:text-blue-300 transition">Testimonials</a>
+          <a href="#" class="hover:text-blue-300 transition">Contact</a>
+        </nav>
+        <button class="md:hidden text-2xl">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-bg min-h-[80vh] flex items-center text-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-2xl bg-black bg-opacity-50 p-8 rounded-lg">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Strategic Solutions for Modern Businesses</h1>
+        <p class="text-xl mb-8">We help companies grow through innovative advisory services</p>
+        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition inline-block">
+          Get Started <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">About Visionary Advisories</h2>
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+          <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" alt="Team meeting" class="rounded-lg shadow-xl">
+        </div>
+        <div class="md:w-1/2">
+          <p class="text-lg mb-4">We are a team of experienced advisors dedicated to helping businesses navigate complex challenges and achieve sustainable growth.</p>
+          <p class="text-lg">Our approach combines deep industry knowledge with innovative thinking to deliver tailored solutions that drive real results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-white p-8 rounded-lg shadow-md text-center">
+          <div class="text-blue-600 text-4xl mb-4">
+            <i class="fas fa-chess"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Strategic Planning</h3>
+          <p>Comprehensive business strategy development for long-term success.</p>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="bg-white p-8 rounded-lg shadow-md text-center">
+          <div class="text-blue-600 text-4xl mb-4">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Financial Advisory</h3>
+          <p>Expert financial guidance to optimize your business performance.</p>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="bg-white p-8 rounded-lg shadow-md text-center">
+          <div class="text-blue-600 text-4xl mb-4">
+            <i class="fas fa-search-dollar"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Market Analysis</h3>
+          <p>In-depth market research to identify opportunities and threats.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
